@@ -68,7 +68,8 @@ export default function LoginForm() {
         setErrors({ general: data.message });
         setPassword("");
       }
-    } catch {n      setErrors({ general: "An error occurred. Please try again." });
+    } catch {
+      setErrors({ general: "An error occurred. Please try again." });
       setPassword("");
     } finally {
       setIsLoading(false);
